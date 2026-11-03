@@ -1,3 +1,6 @@
+require_relative "../lib/standing_booking"
+require "date"
+
 RSpec.describe "StandingBooking" do
   context "when Dee skips one Saturday of Priya's standing booking" do
     # Given Priya has a standing booking for the 6-burner every Saturday, 6 to noon
