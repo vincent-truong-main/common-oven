@@ -27,5 +27,9 @@ RSpec.describe "StandingBooking" do
     it "keeps the 6-burner as Priya's on the following Saturday" do
       expect(standing_booking.who_has(Date.new(2025, 10, 18))).to eq("Priya")
     end
+
+    it "doesn't give Priya the 6-burner on a Tuesday" do
+      expect(standing_booking.who_has(Date.new(2025, 10, 14))).to be_nil
+    end
   end
 end

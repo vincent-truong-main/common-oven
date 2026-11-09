@@ -12,7 +12,7 @@ class StandingBooking
   end
   
   def who_has(date)
-    if @skipped.include?(date)
+    if @skipped.include?(date) || !date.send("#{@day_of_week}?")
       nil
     else
      @member
