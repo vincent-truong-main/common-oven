@@ -1,7 +1,7 @@
 class StandingBooking
   def initialize(member:, equipment:, day_of_week:, time_range:)
     @member = member
-    @equipement = equipment
+    @equipment = equipment
     @day_of_week = day_of_week
     @time_range = time_range
     @skipped = []
